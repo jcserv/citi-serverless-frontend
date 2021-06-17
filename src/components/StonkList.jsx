@@ -6,7 +6,7 @@ import { CardHeader } from './Card/CardHeader';
 import { Stock } from './Stock';
 
 export const StonkList = ({ header, stocks }) => (
-	<Card maxW="3xl" mx="auto">
+	<Card maxW="3xl" mx="auto" width="600px">
 		<CardHeader
 			title={header}
 			action={

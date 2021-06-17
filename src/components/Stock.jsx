@@ -5,7 +5,7 @@ export const Stock = ({ name, ticker, exchange, amount, currency, ...rest }) => 
 	return (
 		<Flex
 			as="dl"
-			width="500px"
+			width="100%"
 			direction={{
 				base: 'column',
 				sm: 'row'

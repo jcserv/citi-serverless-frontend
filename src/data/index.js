@@ -19,10 +19,11 @@ export const indicators = [
 		number: '65%'
 	},
 	{
-		label: 'Sent',
-		number: '345,670',
+		label: 'Total Value',
+		number: '145,670',
+		color: 'green.500',
 		type: 'increase',
-		percentage: '23.36%'
+		percentage: '10.36%'
 	}
 ];
 
@@ -44,6 +45,38 @@ export const goals = [
 	}
 ];
 
+export const portfolio = [
+	{
+		name: 'Square Inc.',
+		ticker: 'SQ',
+		exchange: 'NYSE',
+		amount: '225.11',
+		currency: 'USD'
+	},
+	{
+		name: 'Square Inc.',
+		ticker: 'SQ',
+		exchange: 'NYSE',
+		amount: '225.11',
+		currency: 'USD'
+	},
+	{
+		name: 'Square Inc.',
+		ticker: 'SQ',
+		exchange: 'NYSE',
+		amount: '225.11',
+		currency: 'USD'
+	},
+	{
+		name: 'Square Inc.',
+		ticker: 'SQ',
+		exchange: 'NYSE',
+		amount: '225.11',
+		currency: 'USD'
+	}
+];
+
+
 export const watchlist = [
 	{
 		name: 'Square Inc.',
@@ -53,24 +86,24 @@ export const watchlist = [
 		currency: 'USD'
 	},
 	{
-		name: 'Square Inc.',
-		ticker: 'SQ',
-		exchange: 'NYSE',
-		amount: '225.11',
+		name: 'Microsoft Corporation',
+		ticker: 'MSFT',
+		exchange: 'NASDAQ',
+		amount: '244.01',
 		currency: 'USD'
 	},
 	{
-		name: 'Square Inc.',
-		ticker: 'SQ',
-		exchange: 'NYSE',
-		amount: '225.11',
-		currency: 'USD'
+		name: 'Air Canada Inc.',
+		ticker: 'AC',
+		exchange: 'TSX',
+		amount: '28.02',
+		currency: 'CAD'
 	},
 	{
-		name: 'Square Inc.',
-		ticker: 'SQ',
-		exchange: 'NYSE',
-		amount: '225.11',
+		name: 'Bitcoin',
+		ticker: 'BTC',
+		exchange: 'Crypto',
+		amount: '46977.69',
 		currency: 'USD'
 	}
 ];
