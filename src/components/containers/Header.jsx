@@ -3,8 +3,8 @@ import { Heading, HStack, IconButton, Spacer } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import Fade from 'react-reveal/Fade';
 
-import SearchField from './SearchField';
-import UserProfile from './UserProfile';
+import SearchField from '../SearchField';
+import UserProfile from '../UserProfile';
 
 const Header = () => {
 	const [ isSearchExpanded, setIsSearchExpanded ] = useState(false);

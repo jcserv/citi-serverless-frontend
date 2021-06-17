@@ -1,9 +1,9 @@
 import { Box } from '@chakra-ui/react';
 import React from 'react';
 
-import AnalysisCalendar from './AnalysisCalendar';
-import TopStocksChart from './TopStocksChart';
-import PerformanceGraph from './PerformanceGraph';
+import AnalysisCalendar from '../AnalysisCalendar';
+import TopStocksChart from '../TopStocksChart';
+import PerformanceGraph from '../PerformanceGraph';
 
 const Metrics = () => (
 	<div className="d-flex row justify-content-center" style={{ marginTop: '100px' }}>

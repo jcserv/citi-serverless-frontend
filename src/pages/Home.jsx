@@ -1,35 +1,10 @@
-import Header from '../components/Header';
-import Indicators from '../components/Indicators';
-import Metrics from '../components/Metrics';
-import SideNav from '../components/SideNav';
+import Header from '../components/containers/Header';
+import Indicators from '../components/containers/Indicators';
+import Lists from '../components/containers/Lists';
+import Metrics from '../components/containers/Metrics';
+import SideNav from '../components/containers/SideNav';
 
-const indicators = [
-	{
-		label: 'Total PnL',
-		number: '$1221.43',
-		color: 'green.500',
-		type: 'increase',
-		percentage: '8.36%'
-	},
-	{
-		label: 'Daily PnL',
-		number: '$81.43',
-		color: 'green.500',
-		type: 'increase',
-		percentage: '4.65%'
-	},
-	{
-		label: 'Risk Tolerance',
-		color: 'orange.500',
-		number: '65%'
-	},
-	{
-		label: 'Sent',
-		number: '345,670',
-		type: 'increase',
-		percentage: '23.36%'
-	}
-];
+import { indicators } from "../data"
 
 function App() {
 	return (
@@ -39,6 +14,7 @@ function App() {
 				<Header />
 				<Indicators indicators={indicators} />
 				<Metrics />
+				<Lists />
 			</div>
 		</div>
 	);

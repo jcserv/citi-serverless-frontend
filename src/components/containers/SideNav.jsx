@@ -1,13 +1,13 @@
-import { Box, Divider, Flex, Heading, Spacer, Stack } from '@chakra-ui/react';
+import { Box, Divider, Flex, Heading, Stack } from '@chakra-ui/react';
 import React from 'react';
 import { AiFillPieChart } from 'react-icons/ai';
 import { BsFillGearFill } from 'react-icons/bs';
 import { FaLightbulb, FaList, FaRegQuestionCircle, FaMoneyCheckAlt } from 'react-icons/fa';
-import NavLink from './NavLink';
+import NavLink from '../NavLink';
 
 const SideNav = () => (
 	<Flex
-		h="200vh"
+		h="175vh"
 		width={{
 			sm: 'xs'
 		}}
