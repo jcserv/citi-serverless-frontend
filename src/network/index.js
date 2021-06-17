@@ -4,7 +4,7 @@ const enforceTrailingSlash = url => {
     return url.endsWith("/") ? url : url + "/";
 };
 
-export const serverUrl = process.env.SERVER_URL || "http://localhost:4000";
+export const serverUrl = process.env.REACT_APP_SERVER_URL || "http://localhost:4000/";
 
 export const config = {
     headers: {
@@ -14,6 +14,7 @@ export const config = {
 
 export function getRequest(uri, searchParams) {
     const params = searchParams ? searchParams : "";
+    console.log(`${serverUrl}${uri}`);
     return axios.get(enforceTrailingSlash(`${serverUrl}${uri}`) + params, config);
 }
 
