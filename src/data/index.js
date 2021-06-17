@@ -26,33 +26,51 @@ export const indicators = [
 	}
 ];
 
+export const goals = [
+	{
+		content: 'Save $2500 for emergency fund',
+		isDone: false,
+		status: 'URGENT'
+	},
+	{
+		content: 'Mortgage',
+		isDone: false,
+		status: 'NEW'
+	},
+	{
+		content: 'Pay off student loans',
+		isDone: true,
+		status: 'DONE'
+	}
+];
+
 export const watchlist = [
 	{
-		name: "Square Inc.",
-		ticker: "SQ",
-		exchange: "NYSE",
-		amount: "225.11",
-		currency: "USD",
+		name: 'Square Inc.',
+		ticker: 'SQ',
+		exchange: 'NYSE',
+		amount: '225.11',
+		currency: 'USD'
 	},
 	{
-		name: "Square Inc.",
-		ticker: "SQ",
-		exchange: "NYSE",
-		amount: "225.11",
-		currency: "USD",
+		name: 'Square Inc.',
+		ticker: 'SQ',
+		exchange: 'NYSE',
+		amount: '225.11',
+		currency: 'USD'
 	},
 	{
-		name: "Square Inc.",
-		ticker: "SQ",
-		exchange: "NYSE",
-		amount: "225.11",
-		currency: "USD",
+		name: 'Square Inc.',
+		ticker: 'SQ',
+		exchange: 'NYSE',
+		amount: '225.11',
+		currency: 'USD'
 	},
 	{
-		name: "Square Inc.",
-		ticker: "SQ",
-		exchange: "NYSE",
-		amount: "225.11",
-		currency: "USD",
-	},
+		name: 'Square Inc.',
+		ticker: 'SQ',
+		exchange: 'NYSE',
+		amount: '225.11',
+		currency: 'USD'
+	}
 ];

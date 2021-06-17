@@ -1,7 +1,9 @@
 import React from 'react';
+
+import { Goals } from '../Goals';
 import { StonkList } from '../StonkList';
 
-import { watchlist } from "../../data";
+import { goals, watchlist } from "../../data";
 
 const Lists = () => (
 	<div className="d-flex row justify-content-center" style={{ marginTop: '100px' }}>
@@ -10,7 +12,7 @@ const Lists = () => (
                 <StonkList header="Watchlist" stocks={watchlist} />
             </div>
             <div className="col-6">
-               Hey lol
+                <Goals header="Goals" goals={goals} />
             </div>
         </div>
 	</div>

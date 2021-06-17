@@ -3,10 +3,10 @@ import * as React from 'react';
 import { Card } from './Card';
 import { CardContent } from './Card/CardContent';
 import { CardHeader } from './Card/CardHeader';
-import { Stock } from './Stock';
+import { Goal } from './Goal';
 
-export const StonkList = ({ header, stocks }) => (
-	<Card maxW="3xl" mx="auto">
+export const Goals = ({ header, goals }) => (
+	<Card maxW="3xl" mx="auto" width="600px">
 		<CardHeader
 			title={header}
 			action={
@@ -15,6 +15,6 @@ export const StonkList = ({ header, stocks }) => (
 				</Button>
 			}
 		/>
-		<CardContent>{stocks && stocks.map((stock, index) => <Stock key={`stock-${index}`} {...stock} />)}</CardContent>
+		<CardContent>{goals && goals.map((goal, index) => <Goal key={`goal-${index}`} {...goal} />)}</CardContent>
 	</Card>
 );
