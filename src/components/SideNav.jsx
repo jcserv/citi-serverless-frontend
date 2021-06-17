@@ -7,7 +7,7 @@ import NavLink from './NavLink';
 
 const SideNav = () => (
 	<Flex
-		height="100vh"
+		h="200vh"
 		width={{
 			sm: 'xs'
 		}}
@@ -23,7 +23,7 @@ const SideNav = () => (
 				Dashboard
 			</Heading>
 		</Box>
-		<Stack spacing={6}>
+		<Stack spacing={6} mb="2">
 			<Stack>
 				<NavLink label="Overview" icon={AiFillPieChart} isActive />
 				<NavLink label="Portfolio" icon={FaMoneyCheckAlt} />
@@ -31,7 +31,6 @@ const SideNav = () => (
 				<NavLink label="Activity" icon={FaList} />
 			</Stack>
 		</Stack>
-		<Spacer />
 		<Divider borderColor="whiteAlpha.400" />
 		<Stack mt="2">
 			<NavLink label="Settings" icon={BsFillGearFill} />
