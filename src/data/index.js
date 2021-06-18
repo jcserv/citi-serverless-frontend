@@ -34,6 +34,11 @@ export const goals = [
 		status: 'URGENT'
 	},
 	{
+		content: 'Buy Rahul a birthday present',
+		isDone: false,
+		status: 'URGENT'
+	},
+	{
 		content: 'Mortgage',
 		isDone: false,
 		status: 'NEW'
