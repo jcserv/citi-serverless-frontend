@@ -36,8 +36,8 @@ const DesktopNavMenu = () => (
 			lg: 'flex'
 		}}
 	>
-		<NavItem.Desktop icon={<AiOutlineLogin />} label="Login" />
-		<NavItem.Desktop icon={<IoRocket />} label="Signup" />
+		<NavItem.Desktop icon={<AiOutlineLogin />} label="Login" href="/login" />
+		<NavItem.Desktop icon={<IoRocket />} label="Register" href="/register" />
 	</HStack>
 );
 

@@ -58,7 +58,7 @@ const Features = () => (
 				Invest anywhere - on your phone, tablet, or desktop.
 			</Feature>
 			<Feature title="Secure" icon={<FcPrivacy />}>
-				We take your privacy seriously.
+				We take your privacy seriously, and use encryption for all transactions.
 			</Feature>
 		</SimpleGrid>
 	</Box>

@@ -22,8 +22,6 @@ function Home() {
 		fetchList();
 	}, []);
 
-	console.log(user);
-
 	return (
 		<div className="row app" style={{ width: '100vw' }}>
 			<SideNav />

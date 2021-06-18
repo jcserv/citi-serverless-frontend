@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 import Home from './pages/Home';
 import Landing from './pages/Landing';
 import Login from './pages/Login';
+import Register from './pages/Register';
 
 
 import './App.css';
@@ -12,6 +13,7 @@ function AppRouter() {
 		<Switch>
 			<Route exact path="/" component={Landing} />
 			<Route exact path="/login" component={Login} />
+			<Route exact path="/register" component={Register} />
 			<Route exact path="/dashboard" component={Home} />
 			<Route
 				exact
