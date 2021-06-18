@@ -10,7 +10,7 @@ import SideNav from '../components/containers/SideNav';
 import { getStocks } from "../network/requests";
 import { indicators, mockUser } from "../data"
 
-function App() {
+function Home() {
 
 	const [user, setUser] = useState(mockUser);
 	
@@ -38,4 +38,4 @@ function App() {
 	);
 }
 
-export default App;
+export default Home;

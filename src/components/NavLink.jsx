@@ -10,16 +10,7 @@ const NavLink = ({ icon, isActive, label, ...rest }) => (
 		transition="all 0.3s"
 		fontWeight="medium"
 		lineHeight="1.5rem"
-		aria-current={isActive ? 'page' : undefined}
 		color="whiteAlpha.900"
-		_hover={{
-			bg: 'blue.500',
-			color: 'white'
-		}}
-		_activeLink={{
-			bg: 'blue.700',
-			color: 'white'
-		}}
 		{...rest}
 	>
 		<HStack spacing={4}>
