@@ -7,7 +7,7 @@ import NavLink from '../NavLink';
 
 const SideNav = () => (
 	<Flex
-		h="200vh"
+		h="225vh"
 		width={{
 			sm: 'xs'
 		}}

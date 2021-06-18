@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 import Header from '../components/containers/Header';
 import Indicators from '../components/containers/Indicators';

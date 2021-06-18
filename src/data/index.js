@@ -4,7 +4,7 @@ export const indicators = [
 		number: '$1221.43',
 		color: 'green.500',
 		type: 'increase',
-		percentage: '8.36%'
+		percentage: '10.36%'
 	},
 	{
 		label: 'Daily PnL',
@@ -20,7 +20,7 @@ export const indicators = [
 	},
 	{
 		label: 'Total Value',
-		number: '145,670',
+		number: '$45323.42',
 		color: 'green.500',
 		type: 'increase',
 		percentage: '10.36%'
@@ -47,31 +47,31 @@ export const goals = [
 
 export const portfolio = [
 	{
-		name: 'Square Inc.',
-		ticker: 'SQ',
-		exchange: 'NYSE',
-		amount: '225.11',
+		name: 'Tesla Inc.',
+		ticker: 'TSLA',
+		exchange: 'NASDAQ',
+		amount: '616.60',
 		currency: 'USD'
 	},
 	{
-		name: 'Square Inc.',
-		ticker: 'SQ',
+		name: 'Citigroup Inc.',
+		ticker: 'C',
 		exchange: 'NYSE',
-		amount: '225.11',
+		amount: '68.86',
 		currency: 'USD'
 	},
 	{
-		name: 'Square Inc.',
-		ticker: 'SQ',
-		exchange: 'NYSE',
-		amount: '225.11',
+		name: 'Apple Inc.',
+		ticker: 'AAPL',
+		exchange: 'NASDAQ',
+		amount: '131.79',
 		currency: 'USD'
 	},
 	{
-		name: 'Square Inc.',
-		ticker: 'SQ',
+		name: 'AMC Entertainment Holdings, Inc.',
+		ticker: 'AMC',
 		exchange: 'NYSE',
-		amount: '225.11',
+		amount: '60.73',
 		currency: 'USD'
 	}
 ];
