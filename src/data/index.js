@@ -45,6 +45,52 @@ export const goals = [
 	}
 ];
 
+export const mockUser = {
+	email: "loading...",
+	id: 1,
+	name: "loading...",
+	portfolio: [],
+	tolerance: 0
+};
+
+export const tickerToStockData = {
+	TSLA: {
+		name: 'Tesla Inc.',
+		ticker: 'TSLA',
+		exchange: 'NASDAQ',
+		amount: '616.60',
+		currency: 'USD'
+	},
+	C: {
+		name: 'Citigroup Inc.',
+		ticker: 'C',
+		exchange: 'NYSE',
+		amount: '68.86',
+		currency: 'USD'
+	},
+	AAPL: {
+		name: 'Apple Inc.',
+		ticker: 'AAPL',
+		exchange: 'NASDAQ',
+		amount: '131.79',
+		currency: 'USD'
+	},
+	AMC: {
+		name: 'AMC Entertainment Holdings, Inc.',
+		ticker: 'AMC',
+		exchange: 'NYSE',
+		amount: '60.73',
+		currency: 'USD'
+	},
+	AMZN: {
+		name: 'Amazon Inc.',
+		ticker: 'AMZN',
+		exchange: 'NASDAQ',
+		amount: '3000.00',
+		currency: 'USD'
+	}
+}
+
 export const portfolio = [
 	{
 		name: 'Tesla Inc.',

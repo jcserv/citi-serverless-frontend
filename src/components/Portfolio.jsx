@@ -7,10 +7,13 @@ import { CardContent } from './Card/CardContent';
 import { CardHeader } from './Card/CardHeader';
 import { Stock } from './Stock';
 
+import { tickerToStockData } from "../data"
+
+
 const Portfolio = ({ header, stocks }) => {
 	const [ isSortEnabled, setIsSortEnabled ] = useState(0);
-
-	const stocksCp = [...stocks];
+	const mappedStocks = stocks.map((stock) => tickerToStockData[Object.keys(stock)[0]]);
+	const stocksCp = [...mappedStocks];
 
 	function sortStocks() {
 		stocksCp.sort((a,b) => {
@@ -21,7 +24,7 @@ const Portfolio = ({ header, stocks }) => {
 		});
 	}
 
-	let stonks = stocks;
+	let stonks = mappedStocks;
 	if (isSortEnabled !== 0) {
 		sortStocks();
 		stonks = stocksCp;

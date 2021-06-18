@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 import Header from '../components/containers/Header';
 import Indicators from '../components/containers/Indicators';
@@ -7,28 +7,32 @@ import Metrics from '../components/containers/Metrics';
 import Portfolio from "../components/Portfolio";
 import SideNav from '../components/containers/SideNav';
 
-import { getList } from "../network/requests";
-import { indicators, portfolio } from "../data"
+import { getStocks } from "../network/requests";
+import { indicators, mockUser } from "../data"
 
 function App() {
+
+	const [user, setUser] = useState(mockUser);
 	
 	useEffect(() => {
 		async function fetchList() {
-			const data = await getList();
-			console.log(data);
+			const data = await getStocks({userId: "14"});
+			setUser(data);
 		};
 		fetchList();
 	}, []);
+
+	console.log(user);
 
 	return (
 		<div className="row app" style={{ width: '100vw' }}>
 			<SideNav />
 			<div className="col">
-				<Header />
-				<Indicators indicators={indicators} />
+				<Header email={user.email} name={user.name} />
+				<Indicators indicators={indicators}/>
 				<Metrics />
 				<Lists />
-				<Portfolio header="Your portfolio" stocks={portfolio} />
+				<Portfolio header="Your portfolio" stocks={user.portfolio} />
 			</div>
 		</div>
 	);
